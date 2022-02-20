@@ -9,7 +9,7 @@ import { LOGIN_ROUTE } from '../utils/consts';
 const Navbar = () => {
   const {auth} = useContext(Context);
   const user = useAuthState(auth);
-  console.log(user);
+
   return (
     <div>
       <AppBar position="static">
