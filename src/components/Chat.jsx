@@ -32,7 +32,11 @@ const Chat = () => {
         <div style={{ width: '80%', height: '70vh', border: '1px solid gray', overflowY: 'scroll' }}>
           {messages.map(mess => {
             return (
-              <div key={mess.createdAt} style={{marginTop: '5px', padding: '7px', border: user.uid === mess.uid ? '2px solid teal' : '2px solid gray'}}>
+              <div key={mess.createdAt} style={{marginTop: '5px', padding: '7px', 
+              border: user.uid === mess.uid ? '1px solid teal' : '1px solid gray',
+              marginLeft: user.uid === mess.uid ? 'auto' : '20px',
+              width: 'fit-content', borderRadius: '20px'
+              }}>
                 <Grid container>
                   <Avatar src={mess.photoURL}/>
                   <div>{mess.displayName}</div>

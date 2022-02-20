@@ -1,6 +1,7 @@
 {
   "name": "react-realtime-chat",
   "version": "0.1.0",
+  "homepage": "https://gerwld.github.io/react-realtime-chat",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
@@ -8,6 +9,7 @@
     "@testing-library/react": "^12.1.3",
     "@testing-library/user-event": "^13.5.0",
     "firebase": "^9.6.7",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-firebase-hooks": "^5.0.2",
@@ -16,6 +18,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
